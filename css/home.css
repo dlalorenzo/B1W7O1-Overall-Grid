@@ -1,0 +1,239 @@
+body {
+	font-family: 'Lato', sans-serif;
+}
+
+p {
+	font-size: 14px;
+	line-height: 20px;
+	color: white;
+}
+
+h1 { 
+	font-size: 26px;
+	line-height: 30px;
+	color: white;
+	font-weight: normal;
+}
+
+h2 {
+	font-size: 20px;
+	line-height: 22px;
+	color: grey;
+}
+
+.container-grid {
+	display: grid;
+	grid-template-columns: 760px auto;
+	grid-template-rows: 125px 430px 450px 75px;
+	margin: 0 auto;
+	width: 1100px;
+}
+
+
+	.header {
+		grid-column: 1 / 3;
+		grid-row: 1 / 2;
+		background-image: url(../img/header_bg.png);
+		background-repeat: no-repeat;
+		background-size: 1100px 100%;
+	}
+
+			.header nav {
+				display: inline-block;
+			}
+
+				.header nav ul {
+					display: inline-block;
+					list-style-type: none;
+					
+				}
+
+					.header nav ul li {
+						display: inline-block;
+						position: relative;
+						left: 35%;
+						float: left;
+						line-height: 90px;
+					}
+
+							.header nav ul li a {
+								text-decoration: none;
+								margin: 0 15px;
+								font-size: 14px;
+								line-height: 20px;
+								color: grey;
+							}
+
+							.header img {
+								position: relative;
+								top: -5%;
+								left: 5%;
+							}
+
+	.banner {
+		background-image: url(../img/banner_bg.png);
+		background-repeat: no-repeat;
+		background-size: 1100px 100%;
+		grid-column: 1 / 3;
+		grid-row: 2 / 3;
+	}
+
+		.banner img {
+			position: relative;
+			top: 5%;
+			left: 0%;
+		}
+
+		#buttonPrev {
+			position: relative;
+			top:9%;
+		}
+
+		#buttonNext {
+			position: relative;
+			top: 9%;
+		}
+
+				.banner-content { 
+					grid-column: 2 / 3;
+					grid-row: 2 / 3;
+					width: 275px;
+					margin-top: 30px;
+				}
+
+
+	.content {
+		grid-column: 1 / 3;
+		grid-row: 3 / 4;
+	}
+
+		.nested-grid {
+			display: grid;
+			grid-template-columns: auto auto auto;
+			grid-template-rows: auto auto;
+		}
+
+			.content-slider1 {
+				grid-column: 1 / 2;
+				grid-row: 1 / 2;
+			}
+
+				.content-slider1 img {
+					position: relative;
+					top: 20%;
+					left: 20%;
+				}
+
+			.content-slider2 {
+				grid-column: 2 / 3;
+				grid-row:  1 / 2;
+			}
+
+				.content-slider2 img {
+					position: relative;
+					top: 20%;
+					left: 10%;
+				}
+
+			.content-slider3 {
+				grid-column: 3 / 4;
+				grid-row:  1 / 2;
+			}
+				.content-slider3 img {
+					position: relative;
+					top: 20%;
+					left: 0%;
+				}
+
+			.content-content1 {
+				grid-column: 1 / 2;
+				grid-row: 2 / 3;
+				width: 275px;
+			}
+				.content-text1 {
+					position: relative;
+					top: 20%;
+					left: 30%;
+				}
+				.content-content1 p {
+					color: grey;
+					position: relative;
+				}
+
+					.content-content1 li {
+					margin-left: -20px;
+					}
+						.content-content1 a {
+							text-decoration: none;
+							color: grey;
+							font-weight: bold;
+						}
+
+			.content-content2 {
+				grid-column: 2 / 3;
+				grid-row: 2 / 3;
+				width: 275px;
+			}
+				.content-text2 {
+					position: relative;
+					top: 20%;
+					left: 15%;
+				}
+					.content-content2 p {
+						color: grey;
+						position: relative;
+					}
+
+						.content-content2 li {
+						margin-left: -20px;
+						}
+
+							.content-content2 a {
+								text-decoration: none;
+								color: grey;
+								font-weight: bold;
+							}
+
+			.content-content3 {
+				grid-column: 3 / 4;
+				grid-row: 2 / 3;
+				width: 275px;
+			}
+				.content-text3 {
+					position: relative;
+					top: 20%;
+					left: 0%;
+				}
+
+				.content-content3 p {
+						color: grey;
+						position: relative;
+					}
+
+						.content-content3 li {
+						margin-left: -20px;
+						}
+
+							.content-content3 a {
+								text-decoration: none;
+								color: grey;
+								font-weight: bold;
+							}
+
+
+.footer {
+	grid-column: 1 / 3;
+	grid-row:  4 / 5;
+	background-image: url(../img/footer_bg.png);
+	background-repeat: no-repeat;
+	background-size: 1100px 100%;
+}
+
+		.footer p {
+			color: white;
+			text-align: center;
+			position: relative;
+			top:15%;
+		}
+
+/*Gevalideerd met CSS validator */
